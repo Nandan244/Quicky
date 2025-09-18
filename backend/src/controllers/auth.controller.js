@@ -36,8 +36,9 @@ const signup =async (req, res) => {
 
         if(newUser){
             //generate token
+            const savedUser = await newUser.save();
             generateToken(newUser._id,res);
-            await newUser.save();
+            
            return res.status(201).json({
                 _id : newUser._id,
                 fullName : newUser.fullName,

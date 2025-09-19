@@ -2,8 +2,16 @@ import express from "express"
 
 import {signup,login,logout,updateProfile} from "../controllers/auth.controller.js"
 import { protectRoute } from "../middlewares/auth.middleware.js";
+import { arcjetProtection } from "../middlewares/arcjet.middleware.js";
 
 const router = express.Router();
+
+// router.get('/test',arcjetProtection,(req,res)=>{
+//     res.status(200).json({message:"Arcjet is working fine"})
+// })
+
+
+router.use(arcjetProtection) //applying arcject protection to all auth routes
 
 router.post('/signup',signup)
 router.post('/login',login)

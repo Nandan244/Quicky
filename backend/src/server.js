@@ -14,8 +14,8 @@ const app = express();
 
 const __dirname = path.resolve();
 
-app.use(express.json());
-app.use(express.urlencoded({extended:true}))
+app.use(express.json({limit:"10mb"}));
+app.use(express.urlencoded({limit:"10mb",extended:true}))
 app.use(cors({
     origin:process.env.CLIENT_URL,
     credentials:true,

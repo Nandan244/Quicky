@@ -23,8 +23,8 @@ function LoginPage() {
               <div className="w-full max-w-md">
                 {/* HEADING TEXT */}
                 <div className="text-center mb-8">
-                  <MessageCircleHeartIcon className="w-12 h-12 mx-auto text-cyan-500 mb-4" />
-                  <h2 className="text-2xl font-bold text-slate-200 mb-2">Welcome Back!</h2>
+                  <MessageCircleHeartIcon className="w-12 h-12 mx-auto text-cyan-400 mb-4" />
+                  <h2 className="text-2xl font-bold text-slate-200 mb-2">Welcome Back to <span className="text-cyan-400 text-4xl">QUICKY</span>!</h2>
                   <p className="text-slate-400">Login to access to your account</p>
                 </div>
 
@@ -70,14 +70,14 @@ function LoginPage() {
                     {isLoggingIn ? (
                       <LoaderIcon className="w-full h-5 animate-spin text-center" />
                     ) : (
-                      "Sign Up"
+                      "Login"
                     )}
                   </button>
                 </form>
 
                 <div className="mt-6 text-center">
                   <Link to="/signup" className="auth-link">
-                    Don't have an account? Log In
+                    Don't have an account? Sign Up
                   </Link>
                 </div>
               </div>

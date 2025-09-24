@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useChatStore } from '../store/chatStore'
+import { useChatStore } from '../store/chatStore.js'
 import { XIcon } from 'lucide-react'
 
 function ChatHeader() {

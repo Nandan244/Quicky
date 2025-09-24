@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { useChatStore } from '../store/chatStore'
-import UsersLoadingSkeleton from './UsersLoadingSkeleton';
-import NoChatsFound from './NoChatsFound';
+import { useChatStore } from '../store/chatStore.js'
+import UsersLoadingSkeleton from './UsersLoadingSkeleton.jsx';
+import NoChatsFound from './NoChatsFound.jsx';
 function ChatsList() {
   const {getMyChatPartners , chats , isUsersLoading , setSelectedUser } = useChatStore()
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import {MessageCircleHeartIcon, MessageCircleIcon} from "lucide-react"
+import {MessageCircleHeartIcon} from "lucide-react"
 
 function NoConversationPlaceHolder() {
   return (

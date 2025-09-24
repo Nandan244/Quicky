@@ -1,6 +1,6 @@
 import React,{useEffect,useRef} from 'react'
 import { useChatStore } from '../store/chatStore.js'
-import { useAuthStore } from '../store/authStore.js'
+import { useAuthStore } from '../store/authstore.js'
 import ChatHeader from "./ChatHeader.jsx"
 import NoChatHistoryPlaceholder from "./NoChatHistoryPlaceholder.jsx"
 import MessageInput from './MessageInput.jsx'

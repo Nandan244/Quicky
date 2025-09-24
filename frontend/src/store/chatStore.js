@@ -1,7 +1,7 @@
 import {create} from 'zustand';
 import {axiosInstance} from "../lib/axios.js"
 import {toast} from 'react-hot-toast';
-import {useAuthStore} from "./authStore.js"
+import {useAuthStore} from "./authstore.js"
 
 export const useChatStore = create((set,get)=>({
     allContacts : [],
